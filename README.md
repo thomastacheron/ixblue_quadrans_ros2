@@ -15,3 +15,14 @@ ros2 run quadrans imu_pub
 Result:
 A sensor_msgs::msg::Imu message containing delta angles, delta velocities and an attitude quaternion.
 Access the attitude quaternion to extract your attitude angles with your own convention.
+
+# How to use this package ?
+
+```bash
+cd <your_ROS2_workspace>/src
+git clone https://github.com/thomastacheron/ixblue_quadrans_ros2.git
+cd ..
+colcon build
+. install/setup.bash
+ros2 run quadrans imu_pub
+```
