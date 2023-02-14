@@ -16,6 +16,8 @@ Result:
 A sensor_msgs::msg::Imu message containing delta angles, delta velocities and an attitude quaternion.
 Access the attitude quaternion to extract your attitude angles with your own convention.
 
+![quadrans](https://user-images.githubusercontent.com/114411509/218673568-3eb4e8eb-5de3-4662-94ba-0353b9a9225c.gif)
+
 # How to use this package ?
 
 ```bash
