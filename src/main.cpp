@@ -259,7 +259,7 @@ void mechanization(Network_Params& netwparams, Eigen::Matrix3d& C_b_i, Eigen::Ve
           atan2(-C_b_i(2,0), sqrt(C_b_i(2,1)*C_b_i(2,1) + C_b_i(2,2)*C_b_i(2,2))),
           atan2(C_b_i(2,1), C_b_i(2,2));
   att = att0 - att; // On soustrait car la boussole est dans le sens anti-trigonométrique
-  q_att.setRPY(att(0), att(1), att(2));
+  q_att.setRPY(att(2), att(1), att(0)); // Roll, pitch, Yaw
 }
 
 int main(int argc, char* argv[]){
